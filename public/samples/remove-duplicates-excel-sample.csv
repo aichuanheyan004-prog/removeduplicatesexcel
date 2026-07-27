@@ -1,0 +1,7 @@
+Email,Name,Plan
+ada@example.test,Ada,Free
+ada@example.test,Ada,Free
+max@example.test,Max,Pro
+MAX@example.test,Max,Pro
+" trim@example.test ",Trim,Team
+trim@example.test,Trim,Team
