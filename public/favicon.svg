@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Remove Duplicates Excel">
+  <rect width="64" height="64" rx="12" fill="#f7fbf8"/>
+  <path d="M15 12h28l10 10v30H15z" fill="#ffffff" stroke="#1f7a4d" stroke-width="3" />
+  <path d="M43 12v11h10" fill="none" stroke="#1f7a4d" stroke-width="3" />
+  <path d="M22 28h24M22 36h16M22 44h24" stroke="#2f5d8c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M17 50l9-9M17 41l9 9" stroke="#c2412d" stroke-width="4" stroke-linecap="round"/>
+</svg>
