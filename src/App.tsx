@@ -19,6 +19,7 @@ function Layout({ route, children }: { route: RouteMeta; children: React.ReactNo
         <nav aria-label="Primary navigation">
           <a href="/">Tool</a>
           <a href="/how-to-remove-duplicates-in-excel/">Guide</a>
+          <a href="/blog/">Blog</a>
           <a href="/privacy/">Privacy</a>
           <a href="/terms/">Terms</a>
         </nav>
