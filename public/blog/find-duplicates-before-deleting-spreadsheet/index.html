@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Duplicates Before Deleting Them from a Spreadsheet</title>
+  <meta name="description" content="Find and review duplicate spreadsheet rows before deleting anything by choosing the right key and checking duplicate groups.">
+  <link rel="canonical" href="https://www.removeduplicatesexcel.org/blog/find-duplicates-before-deleting-spreadsheet/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article"><meta property="og:site_name" content="Remove Duplicates Excel">
+  <meta property="og:title" content="Find Duplicates Before Deleting Them from a Spreadsheet">
+  <meta property="og:description" content="Choose the right key, preview duplicate groups, and document the result before exporting a cleaned file.">
+  <meta property="og:url" content="https://www.removeduplicatesexcel.org/blog/find-duplicates-before-deleting-spreadsheet/"><meta property="og:image" content="https://www.removeduplicatesexcel.org/og-image.png">
+  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Find Duplicates Before Deleting Them from a Spreadsheet"><meta name="twitter:description" content="Choose the right key, preview duplicate groups, and document the result before exporting a cleaned file."><meta name="twitter:image" content="https://www.removeduplicatesexcel.org/og-image.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Find Duplicates Before Deleting Them from a Spreadsheet","description":"Find and review duplicate spreadsheet rows before deleting anything by choosing the right key and checking duplicate groups.","datePublished":"2026-08-05","dateModified":"2026-08-05","inLanguage":"en","author":{"@type":"Organization","name":"Remove Duplicates Excel","url":"https://www.removeduplicatesexcel.org"},"publisher":{"@type":"Organization","name":"Remove Duplicates Excel","url":"https://www.removeduplicatesexcel.org","logo":{"@type":"ImageObject","url":"https://www.removeduplicatesexcel.org/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.removeduplicatesexcel.org/blog/find-duplicates-before-deleting-spreadsheet/"}}</script>
+  <link rel="stylesheet" href="/blog.css">
+</head>
+<body><div class="blog-shell">
+  <header class="blog-header"><div class="blog-nav"><a class="brand" href="/">Remove Duplicates Excel</a><nav class="nav-links" aria-label="Primary navigation"><a href="/">Home</a><a href="/how-to-remove-duplicates-in-excel/">Guide</a><a href="/blog/" aria-current="page">Blog</a></nav></div></header>
+  <main class="blog-main"><article class="article-wrap">
+    <header class="article-header"><p class="eyebrow">Spreadsheet review guide</p><h1>Find Duplicates Before Deleting Them from a Spreadsheet</h1><div class="post-meta"><time datetime="2026-08-05">2026-08-05</time><span>5 min read</span></div><p class="lede">Define what “duplicate” means, inspect every group, and preserve an audit trail before creating a cleaned workbook.</p></header>
+    <div class="answer"><strong>The direct answer</strong><p>Work on a copy, select the columns that form the real record key, preview duplicate groups, and export only after verifying the rows that would be retained.</p></div>
+    <div class="article-body">
+      <h2>Finding duplicates is a business-rule decision</h2>
+      <p>Two rows are duplicates only under a chosen definition. Matching every cell finds exact repeated rows. Matching an email, order ID, or SKU may group records that differ elsewhere. Before deleting anything, write down which columns identify one real-world record and which differences are allowed.</p>
+      <h2>A review-first workflow</h2>
+      <h3>1. Protect the source</h3>
+      <p>Duplicate removal changes data. Keep the original XLSX or CSV unchanged, note its row count, and work on a copy. For regulated, shared, or business-critical data, follow your organization's retention and approval rules.</p>
+      <h3>2. Confirm the sheet and header row</h3>
+      <p>Select the intended worksheet and verify whether the first row contains headings. A wrong header choice can treat column names as data or shift every field, making the preview misleading.</p>
+      <h3>3. Choose a candidate key</h3>
+      <ul>
+        <li><strong>Exact repeated rows:</strong> select all columns whose values must match.</li>
+        <li><strong>Repeated customers:</strong> use a stable customer ID when available, not only a name.</li>
+        <li><strong>Repeated transactions:</strong> an order ID may be safer than date plus amount.</li>
+        <li><strong>Product lists:</strong> use SKU only if each SKU should represent one row in this sheet.</li>
+      </ul>
+      <h3>4. Preview the groups</h3>
+      <p>Use the tool's duplicate-group preview before exporting. Inspect the retained row and every matching row. Look for differences in status, timestamp, quantity, notes, and calculated values. A group can be technically matched by the selected key but still require merging rather than deletion.</p>
+      <h3>5. Test a second key when uncertain</h3>
+      <p>Compare the duplicate count under a narrow key and a broader key. If selecting email finds 120 groups but email plus account status finds 45, the difference tells you that status varies within many email groups. Investigate those records instead of choosing the smaller or larger number automatically.</p>
+      <h3>6. Export and validate</h3>
+      <p>After review, export the cleaned file. Reopen it, compare row counts, spot-check retained groups, and verify formulas, formatting, filters, merged cells, and external links if they matter. Browser tools should not be assumed to preserve every advanced workbook feature.</p>
+      <h2>Worked example</h2>
+      <table><thead><tr><th>Row</th><th>Email</th><th>Plan</th><th>Updated</th></tr></thead><tbody>
+        <tr><td>2</td><td>sam@example.com</td><td>Free</td><td>2026-06-01</td></tr>
+        <tr><td>3</td><td>sam@example.com</td><td>Paid</td><td>2026-08-01</td></tr>
+        <tr><td>4</td><td>lee@example.com</td><td>Free</td><td>2026-07-12</td></tr>
+      </tbody></table>
+      <p>Email alone groups rows 2 and 3, but deleting the second row would discard a plan update. The correct action may be to retain the latest row, merge fields, or send the group for manual review. The preview reveals this before data is lost.</p>
+      <h2>Common warning signs</h2>
+      <ul>
+        <li>A chosen key contains many blanks.</li>
+        <li>Names are used where stable IDs exist.</li>
+        <li>Leading zeros or text-number formats differ.</li>
+        <li>Later rows contain newer status or timestamp values.</li>
+        <li>The cleaned row count changes far more than expected.</li>
+      </ul>
+      <p>Microsoft's guidance on <a href="https://support.microsoft.com/en-us/office/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d7-449a-9d1e-edcae4f7fc9e">filtering unique values and removing duplicates</a> reinforces the need to choose columns deliberately. When the rule is confirmed, follow <a href="/blog/remove-duplicate-rows-keep-first/">how to remove duplicate rows while keeping the first match</a> or the <a href="/how-to-remove-duplicates-in-excel/">full guide</a>.</p>
+    </div>
+    <div class="article-footer"><a class="button-link" href="/">Preview duplicates</a><a class="button-link secondary" href="/how-to-remove-duplicates-in-excel/">Read the guide</a></div>
+  </article></main>
+  <footer class="blog-footer"><div class="blog-nav"><span>Remove Duplicates Excel publishes practical, source-aware tutorials.</span><nav class="nav-links" aria-label="Footer navigation"><a href="/">Tool</a><a href="/how-to-remove-duplicates-in-excel/">Guide</a><a href="/blog/">Blog</a></nav></div></footer>
+</div></body>
+</html>
