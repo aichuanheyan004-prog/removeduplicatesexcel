@@ -16,6 +16,30 @@
     <loc>https://www.removeduplicatesexcel.org/terms/</loc>
     <lastmod>2026-07-27</lastmod>
   </url>
+  <url><loc>https://www.removeduplicatesexcel.org/blog/</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://www.removeduplicatesexcel.org/blog/find-duplicates-before-deleting-spreadsheet/</loc><lastmod>2026-08-05</lastmod></url>
+  <url><loc>https://www.removeduplicatesexcel.org/blog/remove-duplicate-rows-keep-first/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://www.removeduplicatesexcel.org/blog/check-blanks-case-before-removing-duplicates/</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://www.removeduplicatesexcel.org/blog/choose-duplicate-columns-safely/</loc><lastmod>2026-08-13</lastmod></url>
+</urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.removeduplicatesexcel.org/</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.removeduplicatesexcel.org/how-to-remove-duplicates-in-excel/</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.removeduplicatesexcel.org/privacy/</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.removeduplicatesexcel.org/terms/</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
   <url><loc>https://www.removeduplicatesexcel.org/blog/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.removeduplicatesexcel.org/blog/find-duplicates-before-deleting-spreadsheet/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.removeduplicatesexcel.org/blog/remove-duplicate-rows-keep-first/</loc><lastmod>2026-08-02</lastmod></url>
